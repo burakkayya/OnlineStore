@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDAF0A26-7322-492D-8AC0-1D487576ED9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OopFinalProject2021</RootNamespace>
+    <AssemblyName>OopFinalProject2021</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemToPurchase.cs" />
+    <Compile Include="Magazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.cs" />
+    <Compile Include="SqlDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SqlDBDataSet.xsc">
+      <DependentUpon>SqlDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SqlDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SqlDBDataSet.xss">
+      <DependentUpon>SqlDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet1.xsc">
+      <DependentUpon>SqlDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SqlDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SqlDBDataSet1.xss">
+      <DependentUpon>SqlDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet2.xsc">
+      <DependentUpon>SqlDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SqlDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SqlDBDataSet2.xss">
+      <DependentUpon>SqlDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet3.xsc">
+      <DependentUpon>SqlDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SqlDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SqlDBDataSet3.xss">
+      <DependentUpon>SqlDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet4.xsc">
+      <DependentUpon>SqlDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SqlDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SqlDBDataSet4.xss">
+      <DependentUpon>SqlDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet5.xsc">
+      <DependentUpon>SqlDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SqlDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SqlDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SqlDBDataSet5.xss">
+      <DependentUpon>SqlDBDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\littleprience.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1984.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stefan Zweig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOCK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurk mantolu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dan brown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lifebeginmagazine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macworldmagazine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voguerihanna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sportmagazine.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAASmAGAZİNE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOGUECOLOR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcayipTarkan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yaşar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cemadrian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NİRVANA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEATLES.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\romance music .jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

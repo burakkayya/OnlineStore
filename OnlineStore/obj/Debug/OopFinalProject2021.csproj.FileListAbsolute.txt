@@ -1,0 +1,10 @@
+D:\OopFinalProject2021\OopFinalProject2021\bin\Debug\OopFinalProject2021.exe.config
+D:\OopFinalProject2021\OopFinalProject2021\bin\Debug\OopFinalProject2021.exe
+D:\OopFinalProject2021\OopFinalProject2021\bin\Debug\OopFinalProject2021.pdb
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.csprojAssemblyReference.cache
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.Form1.resources
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.Properties.Resources.resources
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.csproj.GenerateResource.cache
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.csproj.CoreCompileInputs.cache
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.exe
+D:\OopFinalProject2021\OopFinalProject2021\obj\Debug\OopFinalProject2021.pdb
